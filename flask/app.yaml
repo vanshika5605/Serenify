@@ -1,0 +1,7 @@
+runtime: python39  # or the version you're using
+entrypoint: gunicorn -b :$PORT run:app
+service_account: workload@hack-team-mind-menders.iam.gserviceaccount.com
+
+handlers:
+- url: /.*
+  script: auto

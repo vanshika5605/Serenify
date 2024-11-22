@@ -1,0 +1,21 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+<!--    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--    xmlns:int="http://www.springframework.org/schema/integration"-->
+<!--    xmlns:int-jms="http://www.springframework.org/schema/integration/jms"-->
+<!--    xmlns:context="http://www.springframework.org/schema/context"-->
+<!--    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd-->
+<!--       http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd-->
+<!--       http://www.springframework.org/schema/integration/jms http://www.springframework.org/schema/integration/jms/spring-integration-jms.xsd">-->
+
+<!--    <int-jms:message-driven-channel-adapter-->
+<!--        id="recOperationStatus" channel="recOperationStatusChannel"-->
+<!--        destination-name="recs.operation.status.queue"-->
+<!--        connection-factory="activeMQConnectionFactory" />-->
+<!--    <int:service-activator-->
+<!--        input-channel="recOperationStatusChannel"-->
+<!--        ref="recOperationStatusListener" method="handleStatus" />-->
+
+<!--       <int:channel id="recOperationStatusChannel" />-->
+
+<!--</beans>-->
